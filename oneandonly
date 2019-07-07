@@ -11,7 +11,7 @@ void setup() {Serial.begin(9600);
 }
 void loop() {int soundsens=analogRead(soundpin); 
             if (soundsens>=threshold) 
-                {digitalWrite(ledpin,HIGH); //turns led on
+                {digitalWrite(indicatorpin,HIGH); //turns led on
                  delay(1000); //adjust the indicator delay
 }
                  else{digitalWrite(indicatorpin,LOW);
