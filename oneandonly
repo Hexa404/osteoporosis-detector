@@ -1,0 +1,18 @@
+//Project Padzbot #1 HEXA
+//Thanks to K&R project for giving me a refrence UwU
+
+const int indicatorpin=13; //GIVE THIS PIN A FUCKING LED!!!
+const int soundpin=A2; //sensor analog output
+const int threshold=20; //value for sound sensor,,,this is for analog output, just change the pin in sensor module for digital output
+void setup() {Serial.begin(9600);
+              pinMode(indicatorpin,OUTPUT);
+                      (soundpin,INPUT);
+}
+void loop() {int soundsens=analogRead(soundpin); 
+            if (soundsens>=threshold) 
+                {digitalWrite(ledpin,HIGH); //turns led on
+                 delay(10);
+}
+                 else{digitalWrite(indicatorpin,LOW);
+}}
+//idk how stupid is this method
